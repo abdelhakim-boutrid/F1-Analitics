@@ -1,0 +1,108 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Bebas+Neue&amp;display=swap');
+
+      .title { font-family: 'Bebas Neue', 'Arial Black', sans-serif; font-size: 80px; fill: #f5f5f0; letter-spacing: 4px; }
+      .sub   { font-family: 'Space Mono', monospace; font-size: 13px; fill: #888; letter-spacing: 2px; }
+      .tag   { font-family: 'Space Mono', monospace; font-size: 11px; fill: #e8e8e2; }
+      .pill-txt { font-family: 'Space Mono', monospace; font-size: 10px; fill: #1a1a1a; font-weight: 700; letter-spacing: 1px; }
+      .accent { fill: #E8002D; }
+      .line-anim { animation: dash 3s ease-in-out infinite alternate; }
+      .fade-in   { animation: fadeIn 1.2s ease-out both; }
+      .slide-up  { animation: slideUp 1s ease-out both; }
+      .blink     { animation: blink 2s step-end infinite; }
+      @keyframes dash    { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -60; } }
+      @keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slideUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes blink   { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+    </style>
+
+    <!-- dark background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </linearGradient>
+
+    <!-- subtle red glow left -->
+    <radialGradient id="glow" cx="0%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#E8002D" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0d0d0d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="900" height="280" fill="url(#bg)"/>
+  <rect width="900" height="280" fill="url(#glow)"/>
+
+  <!-- decorative speed lines (left side) -->
+  <g stroke="#E8002D" stroke-opacity="0.18" stroke-width="1">
+    <line x1="0"   y1="100" x2="340" y2="100" stroke-dasharray="8 6" class="line-anim"/>
+    <line x1="0"   y1="140" x2="280" y2="140" stroke-dasharray="8 6" class="line-anim" style="animation-delay:.3s"/>
+    <line x1="0"   y1="180" x2="300" y2="180" stroke-dasharray="8 6" class="line-anim" style="animation-delay:.6s"/>
+  </g>
+
+  <!-- thin white grid lines (subtle) -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="0.5">
+    <line x1="0" y1="56"  x2="900" y2="56"/>
+    <line x1="0" y1="224" x2="900" y2="224"/>
+    <line x1="60"  y1="0" x2="60"  y2="280"/>
+    <line x1="840" y1="0" x2="840" y2="280"/>
+  </g>
+
+  <!-- red accent bar left -->
+  <rect x="0" y="0" width="4" height="280" fill="#E8002D"/>
+
+  <!-- red accent corner top-right -->
+  <rect x="856" y="0" width="44" height="4" fill="#E8002D" opacity="0.6"/>
+
+  <!-- MAIN TITLE -->
+  <text class="title fade-in" x="80" y="165" style="animation-delay:.1s">F1 ANALYTICS</text>
+
+  <!-- red underline accent under title -->
+  <rect x="80" y="172" width="320" height="3" fill="#E8002D" rx="1" class="fade-in" style="animation-delay:.4s"/>
+
+  <!-- subtitle -->
+  <text class="sub slide-up" x="82" y="200" style="animation-delay:.5s">FORMULA 1 · DATA · PERFORMANCE</text>
+
+  <!-- cursor blink -->
+  <rect x="82" y="215" width="8" height="2" fill="#E8002D" class="blink"/>
+
+  <!-- right side — stat pills -->
+  <g class="slide-up" style="animation-delay:.7s">
+    <!-- pill 1 -->
+    <rect x="660" y="90"  width="90" height="22" rx="11" fill="#E8002D"/>
+    <text class="pill-txt" x="705" y="105" text-anchor="middle">F1 · 1950+</text>
+
+    <!-- pill 2 -->
+    <rect x="760" y="90"  width="90" height="22" rx="11" fill="#f5f5f0"/>
+    <text class="pill-txt" x="805" y="105" text-anchor="middle">OPEN SOURCE</text>
+
+    <!-- tags -->
+    <text class="tag" x="660" y="140">// 74 SAISONS</text>
+    <text class="tag" x="660" y="158">// 1100+ COURSES</text>
+    <text class="tag" x="660" y="176">// 107 VAINQUEURS</text>
+  </g>
+
+  <!-- checkered flag pattern (bottom-right corner) -->
+  <g opacity="0.06">
+    <rect x="820" y="228" width="16" height="16" fill="white"/>
+    <rect x="836" y="228" width="16" height="16" fill="black"/>
+    <rect x="852" y="228" width="16" height="16" fill="white"/>
+    <rect x="868" y="228" width="16" height="16" fill="black"/>
+    <rect x="884" y="228" width="16" height="16" fill="white"/>
+    <rect x="820" y="244" width="16" height="16" fill="black"/>
+    <rect x="836" y="244" width="16" height="16" fill="white"/>
+    <rect x="852" y="244" width="16" height="16" fill="black"/>
+    <rect x="868" y="244" width="16" height="16" fill="white"/>
+    <rect x="884" y="244" width="16" height="16" fill="black"/>
+    <rect x="820" y="260" width="16" height="16" fill="white"/>
+    <rect x="836" y="260" width="16" height="16" fill="black"/>
+    <rect x="852" y="260" width="16" height="16" fill="white"/>
+    <rect x="868" y="260" width="16" height="16" fill="black"/>
+    <rect x="884" y="260" width="16" height="16" fill="white"/>
+  </g>
+
+  <!-- bottom border line -->
+  <line x1="0" y1="279.5" x2="900" y2="279.5" stroke="#E8002D" stroke-opacity="0.3" stroke-width="1"/>
+</svg>
