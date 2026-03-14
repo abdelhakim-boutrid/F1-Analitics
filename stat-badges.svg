@@ -1,0 +1,44 @@
+<svg width="900" height="60" viewBox="0 0 900 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bl { font-family: 'Space Mono', monospace; font-size: 11px; fill: #777; letter-spacing: 1px; }
+      .bv { font-family: 'Bebas Neue', 'Arial Black', sans-serif; font-size: 18px; fill: #f5f5f0; letter-spacing: 1px; }
+      .br { font-family: 'Space Mono', monospace; font-size: 9px;  fill: #E8002D; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- BADGE 1: Saisons -->
+  <rect x="0"   y="0" width="170" height="54" rx="6" fill="#111" stroke="#222" stroke-width="1"/>
+  <rect x="0"   y="0" width="3"   height="54" fill="#E8002D"/>
+  <text class="bl" x="18" y="18">SAISONS</text>
+  <text class="bv" x="18" y="40">74 ans</text>
+  <text class="br" x="148" y="40" text-anchor="end">F1</text>
+
+  <!-- BADGE 2: Courses -->
+  <rect x="183" y="0" width="170" height="54" rx="6" fill="#111" stroke="#222" stroke-width="1"/>
+  <rect x="183" y="0" width="3"   height="54" fill="#E8002D"/>
+  <text class="bl" x="201" y="18">COURSES</text>
+  <text class="bv" x="201" y="40">1100+</text>
+  <text class="br" x="331" y="40" text-anchor="end">TOTAL</text>
+
+  <!-- BADGE 3: Vainqueurs -->
+  <rect x="366" y="0" width="170" height="54" rx="6" fill="#111" stroke="#222" stroke-width="1"/>
+  <rect x="366" y="0" width="3"   height="54" fill="#E8002D"/>
+  <text class="bl" x="384" y="18">VAINQUEURS</text>
+  <text class="bv" x="384" y="40">107</text>
+  <text class="br" x="514" y="40" text-anchor="end">PILOTES</text>
+
+  <!-- BADGE 4: Record Hamilton -->
+  <rect x="549" y="0" width="170" height="54" rx="6" fill="#111" stroke="#222" stroke-width="1"/>
+  <rect x="549" y="0" width="3"   height="54" fill="#E8002D"/>
+  <text class="bl" x="567" y="18">RECORD WINS</text>
+  <text class="bv" x="567" y="40">103</text>
+  <text class="br" x="697" y="40" text-anchor="end">HAMILTON</text>
+
+  <!-- BADGE 5: Teams -->
+  <rect x="732" y="0" width="168" height="54" rx="6" fill="#111" stroke="#222" stroke-width="1"/>
+  <rect x="732" y="0" width="3"   height="54" fill="#E8002D"/>
+  <text class="bl" x="750" y="18">ÉCURIES</text>
+  <text class="bv" x="750" y="40">10 actives</text>
+  <text class="br" x="878" y="40" text-anchor="end">2025</text>
+</svg>
